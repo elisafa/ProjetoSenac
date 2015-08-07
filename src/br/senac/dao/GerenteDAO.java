@@ -26,7 +26,17 @@ public class GerenteDAO {
     }
     
     public Cliente buscarCliente(Cliente cliente){
-        return null;
+        boolean encontrado = false;
+        for(Cliente c : cDAO.clientes){
+            if(cliente.equals(c)){
+                encontrado = true;
+                break;
+            }
+            if (!encontrado){
+            System.out.println("Usuário não encontrado!!");
+            }
+        }
+        return cliente;
     }
     
     public ArrayList<Cliente> buscarTodos(){

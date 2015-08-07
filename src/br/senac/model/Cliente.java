@@ -30,6 +30,11 @@ public class Cliente extends Usuario{
         this.saldo = saldo;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente{" + "agencia=" + agencia + ", conta=" + conta +"Nome: " + super.getNome()+ ", saldo=" + saldo + '}';
+    }
+
    
        
 }
